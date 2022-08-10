@@ -103,7 +103,10 @@ place: inside our `clickAlert()` function.
 
 **Note**: we pass `clickAlert` as the argument, not `clickAlert()`. This is
 because we don't want to _invoke_ the function in this line of code. Instead, we
-want to pass a _reference_ to the function to `addEventListener()` so _it_ can
+want to pass a _reference_const input = document.getElementById('button');
+input.addEventListener('click', function() {
+  alert('I was clicked!');
+}); to the function to `addEventListener()` so _it_ can
 call the function when the time comes.
 
 Refresh your browser and try out the latest version of the code in the console
